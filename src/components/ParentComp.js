@@ -15,7 +15,7 @@ function ParentComp(props) {
             <h1>Count {count}</h1>
             <button onClick={() => changeCount(true)}>Increment</button>
             <button onClick={() => changeCount(false)}>Decrement</button>
-            <ChildComp />
+            <ChildComp parentCompCountState={count} />
         </div>
     );
 }

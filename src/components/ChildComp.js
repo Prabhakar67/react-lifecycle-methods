@@ -15,7 +15,7 @@ class childComp extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log('componentWillReceiveProps', 'nextProps', nextProps, 'nextProps', nextProps);
+        console.log('componentWillReceiveProps', 'nextProps', nextProps);
     }
 
     shouldComponentUpdate(nextProps, nextState) {
