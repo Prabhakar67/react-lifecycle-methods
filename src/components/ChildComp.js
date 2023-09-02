@@ -7,31 +7,32 @@ class childComp extends Component {
     }
 
     componentWillMount() {
-
+        console.log('componentWillMount');
     }
 
     componentDidMount() {
-
+        console.log('componentDidMount');
     }
 
     componentWillReceiveProps(nextProps) {
-
+        console.log('componentWillReceiveProps', 'nextProps', nextProps, 'nextProps', nextProps);
     }
 
-    // shouldComponentUpdate(nextProps, nextState) {
-
-    // }
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('shouldComponentUpdate', 'nextProps', nextProps, 'nextState:', nextState);
+        return nextState.count < 10 ? true : false
+    }
 
     componentWillUpdate(nextProps, nextState) {
-
+        console.log('componentWillUpdate', 'nextProps', nextProps, 'nextState', nextState);
     }
 
     componentDidUpdate(prevProps, prevState) {
-
+        console.log('componentDidUpdate', 'prevProps', prevProps, 'prevState', prevState);
     }
 
     componentWillUnmount() {
-
+        console.log('componentWillUnmount');
     }
 
     changeCount(shouldIncrement) {
